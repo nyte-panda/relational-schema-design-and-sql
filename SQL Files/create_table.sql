@@ -9,8 +9,8 @@ primary key (SportsComplex_PK)
 
 CREATE TABLE ComplexType (
 ComplexType_PK INT NOT NULL,
-Budget VARCHAR(50) NOT NULL,
-NOfF VARCHAR(50) NOT NULL,
+Budget VARCHAR(50),
+NOfF VARCHAR(50),
 PRIMARY KEY (ComplexType_PK)
 );
 
