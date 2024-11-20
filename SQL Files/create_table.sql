@@ -8,10 +8,10 @@ primary key (SportsComplex_PK)
 );
 
 CREATE TABLE ComplexType (
-	ComplexType_PK INT,
-    Budget VARCHAR(50) NOT NULL,
-    NOfF VARCHAR(50) NOT NULL,
-    PRIMARY KEY (ComplexType_PK)
+ComplexType_PK INT NOT NULL,
+Budget VARCHAR(50) NOT NULL,
+NOfF VARCHAR(50) NOT NULL,
+PRIMARY KEY (ComplexType_PK)
 );
 
 CREATE TABLE EVENT(
