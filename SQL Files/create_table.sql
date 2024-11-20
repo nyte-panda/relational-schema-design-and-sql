@@ -14,5 +14,6 @@ ENOfP VARCHAR(50),
 ENOfO VARCHAR(50),
 EPDate VARCHAR(50),
 primary key (Event),
+foreign key (SportsComplex_PK)
 );
 
