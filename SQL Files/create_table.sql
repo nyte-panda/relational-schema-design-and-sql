@@ -15,12 +15,14 @@ CREATE TABLE ComplexType (
 );
 
 CREATE TABLE EVENT(
-Event INT NOT NULL,
+Event_PK INT NOT NULL,
 ED VARCHAR(50),
 ENOfP VARCHAR(50),
 ENOfO VARCHAR(50),
 EPDate VARCHAR(50),
-primary key (Event),
+primary key (Event_PK),
 foreign key (SportsComplex_PK)
 );
+
+
 
