@@ -24,5 +24,19 @@ primary key (Event_PK),
 foreign key (SportsComplex_PK)
 );
 
+-- There should be more attributes but I don't know which ones
+CREATE TABLE MultiSportComplex(
+MultiSportComplex_PK INT NOT NULL, 
+primary key (MultiSportComplex_PK)
+);
+
+
+CREATE TABLE OneSportComplex(
+OneSportComplex_PK INT NOT NULL,
+primary key (OneSportComplex_PK)
+);
+
+-- 
+
 
 
