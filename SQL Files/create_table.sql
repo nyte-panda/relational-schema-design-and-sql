@@ -49,7 +49,39 @@ foreign key (ComplexType_PK) References ComplexType (ComplexType_PK)
 );
 
 -- Everything here includes M:N relationships and Official and event entities
+CREATE TABLE holds (
+SportsComplex_PK INT NOT NULL,
+Event_PK INT NOT NULL,
+primary key (SportsComplex_PK, Event_PK), 
+foreign key (SportsComplex_PK) References SportsComplex (SportsComplex_PK),
+foreign key (Event_PK) References Event (Event_PK)
+);
 
+CREATE TABLE Official (
+Official_PK INT NOT NULL,
+primary key (Official_PK)
+);
+
+CREATE TABLE equipment (
+Equipment_PK INT NOT NULL,
+primary key (Equipment_PK)
+);
+
+Create TABLE Officiate (
+Event_PK INT NOT NULL,
+Official_PK INT NOT NULL,
+primary key (Event_PK, Official_PK), 
+foreign key (Event_PK) References Event (Event_PK),
+foreign key (Official_PK) References Official (Official_PK)
+);
+
+Create TABLE Uses (
+Event_PK INT NOT NULL,
+Equipment_PK INT NOT NULL,
+primary key (Event_PK, Equipment_PK), 
+foreign key (Event_PK) References Event (Event_PK),
+foreign key (Equipment_PK) References Equipment (Equipment_PK)
+);
 
 
 
