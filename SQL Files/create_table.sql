@@ -34,7 +34,7 @@ primary key (MultiSportComplex_PK),
 foreign key (ComplexType_PK) References ComplexType (ComplexType_PK)
 );
 CREATE TABLE AREA(
-AREA_PK NOT NULL,
+AREA_PK INT NOT NULL,
 MultiSportComplex_PK INT NOT NULL, 
 LI VARCHAR(50), 
 primary key (MultiSportComplex_PK, AREA_PK),
