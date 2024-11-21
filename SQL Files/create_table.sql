@@ -26,6 +26,7 @@ foreign key (SportsComplex_PK) References SportsComplex (SportsComplex_PK)
 );
 
 -- There should be more attributes but I don't know which ones, 
+----do we need to add more attributes?
 --I added the relationships for the 1:M for onesport complex, multisportcomplex and area multivalue 
 CREATE TABLE MultiSportComplex(
 MultiSportComplex_PK INT NOT NULL, 
