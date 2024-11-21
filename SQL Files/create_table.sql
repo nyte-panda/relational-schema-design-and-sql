@@ -24,16 +24,20 @@ primary key (Event_PK),
 foreign key (SportsComplex_PK)
 );
 
--- There should be more attributes but I don't know which ones
+-- There should be more attributes but I don't know which ones, K: I added the relationships for the 1:M for onesport complex and multisportcomplex
 CREATE TABLE MultiSportComplex(
 MultiSportComplex_PK INT NOT NULL, 
-primary key (MultiSportComplex_PK)
+ComplexType_PK INT NOT NULL,
+primary key (MultiSportComplex_PK),
+foreign key (ComplexType_PK) References ComplexType (ComplexType_PK)
 );
 
 
 CREATE TABLE OneSportComplex(
 OneSportComplex_PK INT NOT NULL,
-primary key (OneSportComplex_PK)
+ComplexType_PK INT NOT NULL,
+primary key (OneSportComplex_PK),
+foreign key (ComplexType_PK) References ComplexType (ComplexType_PK)
 );
 
 -- 
