@@ -16,12 +16,13 @@ PRIMARY KEY (ComplexType_PK)
 
 CREATE TABLE EVENT(
 Event_PK INT NOT NULL,
+SportComplex_PK INT NOT NULL,
 ED VARCHAR(50),
 ENOfP VARCHAR(50),
 ENOfO VARCHAR(50),
 EPDate VARCHAR(50),
 primary key (Event_PK),
-foreign key (SportsComplex_PK)
+foreign key (SportsComplex_PK) References SportComplex_PK (SportsComplex_PK)
 );
 
 -- There should be more attributes but I don't know which ones, 
