@@ -1,6 +1,6 @@
 
 CREATE TABLE SportsComplex(
-SportComplex_PK INT NOT NULL,
+SportsComplex_PK INT NOT NULL,
 CL VARCHAR(50),
 CCOI VARCHAR(50),
 CTOA VARCHAR(50),
