@@ -25,9 +25,6 @@ primary key (Event_PK),
 foreign key (SportsComplex_PK) References SportsComplex (SportsComplex_PK)
 );
 
--- There should be more attributes but I don't know which ones, 
-----do we need to add more attributes?
---I added the relationships for the 1:M for onesport complex, multisportcomplex and area multivalue 
 CREATE TABLE MultiSportComplex(
 MultiSportComplex_PK INT NOT NULL, 
 ComplexType_PK INT NOT NULL,
@@ -36,7 +33,7 @@ foreign key (ComplexType_PK) References ComplexType (ComplexType_PK)
 );
 CREATE TABLE Area(
 MultiSportComplex_PK INT NOT NULL, 
-Area_PK INT NOT NULL,         --Unsure if INT or VARCHAR
+Area_PK INT NOT NULL,        
 LI VARCHAR(50), 
 primary key (MultiSportComplex_PK, AREA_PK),
 foreign key (MultiSportComplex_PK) References MultiSportComplex (MultiSportComplex_PK)
@@ -49,7 +46,6 @@ primary key (OneSportComplex_PK),
 foreign key (ComplexType_PK) References ComplexType (ComplexType_PK)
 );
 
--- Everything here includes M:N relationships and Official and event entities
 CREATE TABLE holds (
 SportsComplex_PK INT NOT NULL,
 Event_PK INT NOT NULL,
