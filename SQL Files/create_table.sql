@@ -42,6 +42,6 @@ Budget VARCHAR(50)
 ); -- Need to add more variables -- 
 
 
--- There should be 3 more tables (OneSportComplex, MultiSportComplex, Area) --
+-- There should be 3 more tables (OneSportComplex, MultiSportComplex, Area) trying to figure out how to add them and what they should be--
 
 
