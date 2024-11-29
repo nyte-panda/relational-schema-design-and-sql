@@ -50,6 +50,12 @@ SportsComplex_PK VARCHAR(50) NOT NULL,
 FOREIGN KEY (SportsComplex_PK) REFERENCES SportsComplex(SportsComplex_PK)
 );
 
+CREATE TABLE MultiSportComplex(
+MultiSportComplex_PK INT NOT NULL AUTO_INCREMENT,
+SportsComplex_PK VARCHAR(50) NOT NULL,
+FOREIGN KEY (SportsComplex_PK) REFERENCES SportsComplex(SportsComplex_PK)
+);
+
 
 -- There should be 3 more tables (OneSportComplex, MultiSportComplex, Area) trying to figure out how to add them and what they should be--
 
