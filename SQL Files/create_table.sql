@@ -57,6 +57,4 @@ FOREIGN KEY (SportsComplex_PK) REFERENCES SportsComplex(SportsComplex_PK)
 );
 
 
--- There should be 3 more tables (OneSportComplex, MultiSportComplex, Area) trying to figure out how to add them and what they should be--
-
 
