@@ -54,14 +54,14 @@ PRIMARY KEY(Complex_PK)
 
 CREATE TABLE OneSportComplex(
 OneSportComplex_PK INT NOT NULL,
-SportsComplex_PK VARCHAR(50) NOT NULL,
+SportsComplex_PK INT NOT NULL,
 FOREIGN KEY (SportsComplex_PK) REFERENCES SportsComplex(SportsComplex_PK),
 PRIMARY KEY(OneSportComplex_PK)
 );
 
 CREATE TABLE MultiSportComplex(
 MultiSportComplex_PK INT NOT NULL AUTO_INCREMENT,
-SportsComplex_PK VARCHAR(50) NOT NULL,
+SportsComplex_PK INT NOT NULL,
 FOREIGN KEY (SportsComplex_PK) REFERENCES SportsComplex(SportsComplex_PK),
 PRIMARY KEY(MultiSportComplex_PK)
 );
