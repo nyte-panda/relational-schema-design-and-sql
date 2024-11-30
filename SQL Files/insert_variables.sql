@@ -10,8 +10,8 @@ VALUES
 
 INSERT INTO Holds (SportsComplex_PK, Event_PK)
 VALUES
-('Midtown Sports Complex', '31'),
-('Uptown Training Complex', '41'); 
+(1, 1),
+(2, 2); 
 
 
 INSERT INTO Official
