@@ -24,5 +24,20 @@ VALUES
 (),
 ();
 
+INSERT INTO Officiate
+VALUES
+(),
+();
+
+INSERT INTO USES
+VALUES
+(),
+();
+
+INSERT INTO ComplexType (NOfF, Budget)
+VALUES
+('123', '1208'),
+('470', '89031');
+
 
 
