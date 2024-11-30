@@ -39,5 +39,10 @@ VALUES
 ('123', '1208'),
 ('470', '89031');
 
+INSERT INTO OneSportComplex (SportsComplex_PK)
+VALUES
+(1, 1),
+(2, 2);
+
 
 
