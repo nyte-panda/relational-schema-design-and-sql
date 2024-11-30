@@ -11,9 +11,9 @@ VALUES
 INSERT INTO Holds (SportsComplex_PK, Event_PK)
 VALUES
 ('Midtown Sports Complex', '31'),
-('Uptown Training Complex', '41'); -- Might be wrong still figuring out how to do it with FK --
+('Uptown Training Complex', '41'); 
 
--- Not sure about these -- 
+
 INSERT INTO Official
 VALUES
 (),
