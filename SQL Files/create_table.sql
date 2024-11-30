@@ -53,7 +53,7 @@ PRIMARY KEY(Complex_PK)
 ); 
 
 CREATE TABLE OneSportComplex(
-OneSportComplex_PK INT NOT NULL,
+OneSportComplex_PK INT NOT NULL AUTO_INCREMENT,
 SportsComplex_PK INT NOT NULL,
 FOREIGN KEY (SportsComplex_PK) REFERENCES SportsComplex(SportsComplex_PK),
 PRIMARY KEY(OneSportComplex_PK)
