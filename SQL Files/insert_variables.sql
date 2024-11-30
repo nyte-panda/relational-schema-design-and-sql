@@ -44,5 +44,15 @@ VALUES
 (1),
 (2);
 
+INSERT INTO MultiSportComplex (SportsComplex_PK)
+VALUES
+(1),
+(2);
+
+INSERT INTO Area (LI, MultiSportComplex_PK)
+VALUES
+('Ben', 1),
+('Sam', 2);
+
 
 
