@@ -41,8 +41,8 @@ VALUES
 
 INSERT INTO OneSportComplex (SportsComplex_PK)
 VALUES
-(1, 1),
-(2, 2);
+(1),
+(2);
 
 
 
