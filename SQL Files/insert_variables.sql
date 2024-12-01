@@ -23,15 +23,15 @@ VALUES
 (),
 ();
 
-INSERT INTO Officiate (Event_PK)
+INSERT INTO Officiate (Event_PK, Official_PK)
 VALUES
-(1),
-(2);
+(1,2),
+(2,2);
 
-INSERT INTO USES (Event_PK)
+INSERT INTO USES (Event_PK, Equipment_PK)
 VALUES
-(1),
-(2);
+(1,1),
+(2,2);
 
 INSERT INTO ComplexType (NOfF, Budget)
 VALUES
