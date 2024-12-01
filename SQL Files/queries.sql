@@ -11,6 +11,6 @@ ORDER BY Event.Event_PK, SportsComplex.SportsComplex_PK
 SELECT SportsComplex.CL, ComplexType.Budget
 FROM SportsComplex, ComplexType
 Where ComplexType.NOfF > 2
-    AND ---Having problems connecting SportsComplex to ComplexType.
+    AND SportsComplex.SportsComplex_PK = ComplexType.Complex_PK
 ORDER BY SPortscomplex.SportsComplex_PK, Complextype.ComplexType_PK
 ;
