@@ -12,5 +12,5 @@ SELECT SportsComplex.CL, ComplexType.Budget
 FROM SportsComplex, ComplexType
 Where ComplexType.NOfF > 2
 	AND SportsComplex.SportsComplex_PK = ComplexType.Complex_PK
-ORDER BY Sportscomplex.SportsComplex_PK, Complextype.Complex_PK
+ORDER BY SportsComplex.SportsComplex_PK, ComplexType.Complex_PK
 ;
