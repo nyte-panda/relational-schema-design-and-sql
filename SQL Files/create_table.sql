@@ -69,7 +69,7 @@ PRIMARY KEY(MultiSportComplex_PK)
 
 CREATE TABLE Area(
 Area_PK INT NOT NULL AUTO_INCREMENT,
-MultiSportComplex_PK NOT NULL,
+MultiSportComplex_PK INT NOT NULL,
 LI VARCHAR(50),
 FOREIGN KEY (MultiSportComplex_PK) REFERENCES MultiSportComplex(MultiSportComplex_PK),
 PRIMARY KEY(Area_PK)
