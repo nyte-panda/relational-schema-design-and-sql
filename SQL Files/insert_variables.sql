@@ -5,8 +5,8 @@ VALUES
 
 INSERT INTO Event (EPDate, ED, ENOfP, ENOfO)
 VALUES
-('31', 'Tuesday', '360', 'Jane Mary'),
-('45', 'Monday', '45', 'Aaron Doe');
+('20241129', 'Tuesday', '360', 'Jane Mary'),
+('20241128', 'Monday', '45', 'Aaron Doe');
 
 INSERT INTO Holds (SportsComplex_PK, Event_PK)
 VALUES
