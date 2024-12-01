@@ -8,3 +8,9 @@ ORDER BY Event.Event_PK, SportsComplex.SportsComplex_PK
 ;
 
 -- Add your second query after this line, do not remove or edit this line
+SELECT SportsComplex.CL, ComplexType.Budget
+FROM SportsComplex, ComplexType
+Where ComplexType.NOfF > 2
+    AND ---Having problems connecting SportsComplex to ComplexType.
+ORDER BY SPortscomplex.SportsComplex_PK, Complextype.ComplexType_PK
+;
